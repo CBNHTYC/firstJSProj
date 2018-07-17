@@ -23,7 +23,7 @@ div{
 
 }
 
-form{
+.inputHEX{
     margin: 0 auto;
     padding: 30px;
     max-width: 350px;
@@ -38,7 +38,7 @@ body{
     background-color: #a9a9a9;
 }
 
-input{
+.input{
     border-color: #a9a9a9;
     background-color: #FFFF;
     border-radius: 5px;
@@ -63,7 +63,7 @@ input{
     transition: .2s;
 }
 
-.card{
+.item{
     position: relative;
     border-style: solid;
     border-color: #000000;
