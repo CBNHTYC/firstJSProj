@@ -5,18 +5,22 @@
 }
 
 h1{
-    margin: 30px 60px 0 0;
-    padding: 0 16px 30px 30px;
+
+    padding: 30px;
     font-size: 24px;
-    alignment: center;
-    align-content: center;
-    background-color: #f8f8f8;
+    text-align: center;
 }
 
-div{
+main{
     margin: 0 auto;
-    max-width: 1000px;
-    min-width: 1000px;
+    max-width: 1200px;
+    min-width: 1200px;
+}
+div{
+
+    align-content: center;
+    background-color: #ffff;
+
 }
 
 form{
@@ -35,22 +39,101 @@ body{
 }
 
 input{
+    border-color: #a9a9a9;
+    background-color: #FFFF;
     border-radius: 5px;
     max-width: 120px;
     min-width: 120px;
-    padding: 1px 0 0 1px;
+    padding: 4px;
+    border-style: solid;
 }
 
-button{
+.button1{
     border-radius: 5px;
     max-width: 120px;
     min-width: 120px;
     transition: .2s;
-    padding: 1px 5px 0 5px;
-    background-color: cornflowerblue;
+    margin: 0 auto;
+    background-color: #6495ed;
+    border-color: #6495ed;
 }
 
 .button:hover{
-    background-color: blue;
+    background-color: #ffff;
+    transition: .2s;
 }
 
+.card{
+    position: relative;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    max-width: 150px;
+    max-height: 200px;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+.card_img{
+    background-color: #000000;
+    max-width: 75px;
+    max-height: 75px;
+    min-width: 75px;
+    min-height: 75px;
+    margin: 15px auto;
+}
+
+.card_field{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.color_value{
+    font-size: 14px;
+    alignment: top;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.col{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.item_fav{
+    display: none;
+}
+
+.item_fav + label {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+.item_fav + label::before {
+    content: "";
+    background-image: url(../img/fav_none.svg);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    display: inline-block;
+}
+.item_fav:checked + label::before {
+    content: "";
+    background-image: url(../img/fav.svg);
+}
+
+.item_delete {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
