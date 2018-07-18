@@ -64,6 +64,7 @@ body{
 }
 
 .item{
+    margin-right: 0px;
     position: relative;
     border-style: solid;
     border-color: #000000;
@@ -88,6 +89,9 @@ body{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 15px;
 }
 
 .color_value{
@@ -102,7 +106,7 @@ body{
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    flex: 0 0 25%;
+    /*flex: 0 0 25%;*/
     max-width: 25%;
 }
 
